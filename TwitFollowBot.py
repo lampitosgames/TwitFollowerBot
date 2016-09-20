@@ -11,6 +11,10 @@ ctoken = ''
 #API Secret goes here!!!
 csecret = ''
 
+#View the description on github!! https://github.com/lampitosgames/TwitFollowerBot
+#This script allows you to follow a specefied number of users by keyword. It is great for marketing as it allows you to expand your account's reach based on other people's
+#interests.  The idea is that by batch following target keywords, you are able to abuse the "follow for a follow" manner of twitter and rapidly increase your twitter audience.
+#Using a test account, I got about 4000 followers in 3 weeks using this method.
 
 #don't worry about these
 atoken = ''
