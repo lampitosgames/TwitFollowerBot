@@ -21,11 +21,11 @@ This script will save data in your %appdata% folder.  If you delete the data sto
 TWITTER APPLICATION SETUP
 ===============
 
-Once you have your python environment set up correctly, you will need a twitter developer account!  Head on over to dev.twitter.com to get started.  In the top-right corner, there is a 'sign in' option.  You can sign in with your current twitter account, or just create a new one.  No matter what account you use, this twitter bot will still be able to run for any other twitter account.
+Once you have your python environment set up correctly, you will need a twitter developer account!  Head on over to apps.twitter.com to get started.  No matter what account you use, this twitter bot will still be able to run for any other twitter account.
 
-Once you are signed in, hover over your profile (where the 'sign in' button was before), and select 'My Applications'.  Click the 'Create New App' button!  Fill out everything except the callback url (you don't need that) and hit 'Create your Twitter application'.
+Click the 'Create New App' button!  Fill out everything except the callback url (you don't need that) and hit 'Create your Twitter application'.
 
-On your app's page, you will find a bunch of info we do not need.  Across the top, click on the tab that says 'API Keys'.  Copy your API Key and API Secret to a text file or something, because we will need those.
+On your app's page, you will find a bunch of info we do not need.  Across the top, click on the tab that says 'API Keys'.  Copy your API Key (Consumer key) and API Secret (Consumer secret) to a text file or something, because we will need those.
 
 The final setup phase is to place your keys into the script.  I assume you've downloaded my program by now, right?  If not, go ahead and do that, and open it up in your favorite editor.  The first two variables are where you need to place your API Key and API Secret respectively (they are labeled, don't worry).  Congradulations!  You are all set to run this bad boy!
 
@@ -36,6 +36,7 @@ You will want to run this from the python command line, just because you need to
 If this is your first time running the script, you will need to authenticate the application with your twitter account.  The script will send you to an authentication page where you will need to log in and hit "authorize".  A series of numbers will appear in bold.  Copy those into your python command line, hit 'enter', and you are good to go!
 
 First thing is first, you will probably want to whitelist the people you are currently following.  Whitelisted users will never be unfollowed by this twitter bot.  There are two functions to do this with.
+(A brief note.  You might need to prefix function calls with TwitFollowerBot.<function>)
 
 new_whitelist_member(name) - This will whitelist a user based on their twitter username (without the @ in front of it).
 

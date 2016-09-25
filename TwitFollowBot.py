@@ -69,8 +69,8 @@ try:
 				print 'Invalid key, generating new authentication...'
 		
 		#set authentication keys, aquired via user verification
-		atoken = auth.access_token.key
-		asecret = auth.access_token.secret
+		atoken = auth.access_token
+		asecret = auth.access_token_secret
 		#save data to file
 		userVerification = str({'token': atoken, 'secret': asecret})
 		authFile = open(authDataFile, "w")
